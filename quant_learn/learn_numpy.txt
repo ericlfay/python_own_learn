@@ -1,0 +1,93 @@
+引用numpy
+import numpy as np
+
+查看numpy版本号
+
+numpy.version.full_version
+
+创建步长数组
+
+np.arange(1,20,2)
+
+
+查看类型
+
+type(a)
+
+改变结构
+
+a.reshape(4,5)
+
+
+查看维度
+
+a.ndim
+
+
+查看样式
+
+a.shape
+
+查看类型
+
+a.dtype
+
+查看占位
+
+a.dzise
+
+创建数组
+
+raw = [0,1,2,3,4]
+np.array(raw)
+
+创建全零矩阵
+
+d = (4,5)
+np.zeros(d)
+
+指定矩阵类型
+
+d = (4,5)
+np.zeros(d,dtype = int)
+
+创建[0，1)随机数
+
+np.random.rand(5)
+
+元素访问
+
+a[1,1]
+a[:,2]
+np.where(a > 1)
+a[:,2][a[:,0]>3]
+
+转置
+a.T
+
+
+求逆
+import numpy.linalg as nlg
+nlg.inv(a)
+
+求特征值,特征向量
+
+eig_value, eig_vector = nlg.eig(a)
+
+按列拼接向量
+
+np.column_stack((a,b))
+
+
+横向拼接和纵向拼接
+
+c = np.hstack([a,b])
+d = np.vstack([a,b])
+
+缺失值
+
+isnan(a)
+
+將nan替换成0
+
+np.nan_to_num(a)
