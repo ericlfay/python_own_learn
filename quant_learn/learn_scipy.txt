@@ -1,0 +1,17 @@
+导入包
+import numpy as np#导入numpy	
+import scipy.stats as stats#导入统计部分
+import scipy.optimize as opt#导入优化部分
+
+统计部分	
+    生成随机数
+均匀分布（uniform）、正态分布（norm）、贝塔分布（beta）、伯努利分布（bernoulli）、几何分布（geom）、泊松分布（poisson）
+
+生成10个[0, 1]区间上的随机数和10个服从参数a=4，b=2的贝塔分布随机数：
+rv_unif = stats.uniform.rvs(size=10)
+print rv_unif
+rv_beta = stats.beta.rvs(size=10, a=4, b=2)
+print rv_beta
+
+
+
